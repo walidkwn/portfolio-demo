@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Parcours académique de Walid — Étudiant en Informatique à Sorbonne Université, de l'Algérie à Paris." />
+  <title>Walid | Parcours Académique</title>
+
+  <!-- FontAwesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/academic.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+
+      <!-- Logo -->
+      <a href="index.html" class="nav-logo">Kaouane Walid</a>
+
+      <!-- Desktop Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html"          class="nav-link">Accueil</a></li>
+        <li><a href="about.html"          class="nav-link">À propos</a></li>
+        <li><a href="academic.html"       class="nav-link active">Parcours académiques</a></li>
+        <li><a href="certifications.html" class="nav-link">Certifications</a></li>
+        <li><a href="contact.html"        class="nav-link btn btn-primary btn-sm">Contact</a></li>
+      </ul>
+
+      <!-- Mobile Toggle -->
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════════
+         PAGE HERO
+    ═══════════════════════════════════════════════ -->
+    <section class="page-hero">
+      <div class="container">
+        <h1>Mon <span class="highlight">Parcours</span></h1>
+        <p>De Tizi-Ouzou à Sorbonne Université</p>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         SECTION 1 — TIMELINE
+    ═══════════════════════════════════════════════ -->
+    <section class="timeline-section">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <h2 class="section-title">Mes <span>Formations</span></h2>
+          <div class="glow-line"></div>
+        </div>
+
+        <div class="timeline stagger">
+
+          <!-- Item 1 — L3 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-content">
+              <span class="timeline-date">2025 — Présent</span>
+              <h3 class="timeline-title">Licence 3 Informatique</h3>
+              <p class="timeline-place">
+                <i class="fa-solid fa-university"></i>
+                Sorbonne Université, Paris
+              </p>
+              <p class="timeline-desc">
+                3e année — Modules : Réseaux, Orientation et insertion professionnel, Algorithmique 2,
+                Programmation orientée objet avancé, Architectures des ordinateurs, OS Systèmes,
+                Anglais, Programmation concurrente, Cryptologie, Développement web, Calculabilité et décidabilité.
+              </p>
+              <div class="timeline-badges">
+                <span class="badge"><span class="status-dot"></span> En cours</span>
+              </div>
+            </div>
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-spacer"></div>
+          </div>
+
+          <!-- Item 2 — L2 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-spacer"></div>
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2024 — 2025</span>
+              <h3 class="timeline-title">Licence 2 Informatique</h3>
+              <p class="timeline-place">
+                <i class="fa-solid fa-university"></i>
+                Sorbonne Université, Paris
+              </p>
+              <p class="timeline-desc">
+                2e année — Modules : Mathématiques discrètes, Bases de données, C avancé, Bash/Shell,
+                Structures de données, Programmation fonctionnelle, Programmation orientée objet,
+                Algorithmique 1, Anglais, Développement architecture client server.
+              </p>
+              <div class="timeline-badges">
+                <span class="badge badge-green">Obtenu - Mention Passable</span>
+              </div>
+            </div>
+            <div class="timeline-dot" style="background: var(--accent-green);" aria-hidden="true"></div>
+          </div>
+
+          <!-- Item 3 — L1 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-content">
+              <span class="timeline-date">2023 — 2024</span>
+              <h3 class="timeline-title">Licence 1 Informatique</h3>
+              <p class="timeline-place">
+                <i class="fa-solid fa-university"></i>
+                Sorbonne Université, Paris
+              </p>
+              <p class="timeline-desc">
+                1ère année — Modules : Programmation Python / Langage C base, Mathématiques 1, Mathématiques 2,
+                Mathématiques 3, Sciences des données, Orientation et insertion professionnelle.
+              </p>
+              <div class="timeline-badges">
+                <span class="badge badge-green">Obtenu - Mention Passable</span>
+              </div>
+            </div>
+            <div class="timeline-dot" style="background: var(--accent-green);" aria-hidden="true"></div>
+            <div class="timeline-spacer"></div>
+          </div>
+
+          <!-- Item 4 — Bac -->
+          <div class="timeline-item reveal">
+            <div class="timeline-spacer"></div>
+            <div class="timeline-dot timeline-dot--end" style="background: var(--accent-green);" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2022 — 2023</span>
+              <h3 class="timeline-title">Baccalauréat Candidat Libre</h3>
+              <p class="timeline-place">
+                <i class="fa-solid fa-graduation-cap"></i>
+                Algérie — Tizi-Ouzou
+              </p>
+              <p class="timeline-desc">
+                Baccalauréat candidat libre, filière Bac Général Maths SVT.
+                Intégration à Sorbonne Université via Parcoursup.
+              </p>
+              <div class="timeline-badges">
+                <span class="badge badge-green">Obtenu - Mention Bien</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         SECTION 2 — MODULES
+    ═══════════════════════════════════════════════ -->
+    <section class="modules-section">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <h2 class="section-title">Modules &amp; Domaines <span>étudiés</span></h2>
+          <div class="glow-line"></div>
+        </div>
+
+        <div class="modules-grid stagger">
+
+          <div class="module-card card reveal">
+            <div class="module-icon"><i class="fa-solid fa-code"></i></div>
+            <h3 class="module-title">Programmation</h3>
+            <ul class="module-list">
+              <li>Python</li>
+              <li>C</li>
+              <li>Java</li>
+              <li>Bash</li>
+              <li>Algorithmique</li>
+            </ul>
+          </div>
+
+          <div class="module-card card reveal">
+            <div class="module-icon"><i class="fa-solid fa-network-wired"></i></div>
+            <h3 class="module-title">Systèmes &amp; Réseaux</h3>
+            <ul class="module-list">
+              <li>OS Unix/Linux</li>
+              <li>TCP/IP</li>
+              <li>Protocoles réseau</li>
+              <li>Administration système</li>
+            </ul>
+          </div>
+
+          <div class="module-card card reveal">
+            <div class="module-icon"><i class="fa-solid fa-globe"></i></div>
+            <h3 class="module-title">Web &amp; BDD</h3>
+            <ul class="module-list">
+              <li>HTML/CSS/JS</li>
+              <li>SQL</li>
+              <li>Bases de données relationnelles</li>
+            </ul>
+          </div>
+
+          <div class="module-card card reveal">
+            <div class="module-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3 class="module-title">Cybersécurité</h3>
+            <ul class="module-list">
+              <li>Sécurité des réseaux</li>
+              <li>Sécurité des systèmes</li>
+              <li>Cryptographie</li>
+              <li>Pen Test</li>
+            </ul>
+          </div>
+
+          <div class="module-card card reveal">
+            <div class="module-icon"><i class="fa-solid fa-square-root-variable"></i></div>
+            <h3 class="module-title">Mathématiques</h3>
+            <ul class="module-list">
+              <li>Algèbre linéaire</li>
+              <li>Probabilités</li>
+              <li>Logique</li>
+              <li>Maths discrètes</li>
+            </ul>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         SECTION 3 — FORMATIONS EN LIGNE
+    ═══════════════════════════════════════════════ -->
+    <section class="online-section">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <h2 class="section-title">Formations en ligne &amp; <span>Auto-apprentissage</span></h2>
+          <div class="glow-line"></div>
+        </div>
+
+        <div class="online-list">
+
+          <!-- SecNumAcadémie -->
+          <div class="online-item reveal">
+            <div class="online-icon online-icon--cyan">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <div class="online-info">
+              <div class="online-name">SecNumAcadémie <span class="badge badge-green" style="margin-left:8px;">ANSSI</span></div>
+              <p class="online-desc">Cybersécurité fondamentaux — Formation officielle de l'ANSSI couvrant les bases de la sécurité informatique.</p>
+              <div class="online-progress">
+                <div class="online-progress-label">
+                  <span>Progression</span>
+                  <span class="online-progress-pct" style="color:var(--accent-green);">100%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 100%; background: var(--grad-green);"></div>
+                </div>
+              </div>
+            </div>
+            <div class="online-status">
+              <span class="badge badge-green"><i class="fa-solid fa-check"></i> Complété</span>
+            </div>
+          </div>
+
+          <!-- TryHackMe -->
+          <div class="online-item reveal">
+            <div class="online-icon online-icon--green">
+              <i class="fa-solid fa-terminal"></i>
+            </div>
+            <div class="online-info">
+              <div class="online-name">TryHackMe <span class="badge" style="margin-left:8px;">Labs Défensives</span></div>
+              <p class="online-desc">Labs défensives et SOC operations — Amélioration des compétences en détection, analyse et réponse aux incidents pour évoluer vers le rôle de SOC Analyst.</p>
+              <div class="online-progress">
+                <div class="online-progress-label">
+                  <span>Progression</span>
+                  <span class="online-progress-pct">~30%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 30%;"></div>
+                </div>
+              </div>
+            </div>
+            <div class="online-status">
+              <span class="badge"><span class="status-dot"></span> En cours</span>
+            </div>
+          </div>
+
+          <!-- HackTheBox -->
+          <div class="online-item reveal">
+            <div class="online-icon online-icon--purple">
+              <i class="fa-solid fa-cube"></i>
+            </div>
+            <div class="online-info">
+              <div class="online-name">HackTheBox <span class="badge" style="margin-left:8px;">Labs Défensives</span></div>
+              <p class="online-desc">Labs défensives et exercices SOC — Renforcement des compétences en analyse de menaces et incident response pour le rôle de SOC Analyst.</p>
+              <div class="online-progress">
+                <div class="online-progress-label">
+                  <span>Progression</span>
+                  <span class="online-progress-pct" style="color:var(--accent-purple);">15%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 15%; background: var(--grad-main);"></div>
+                </div>
+              </div>
+            </div>
+            <div class="online-status">
+              <span class="badge"><span class="status-dot"></span> En cours</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Brand column -->
+        <div class="footer-brand">
+          <div class="footer-logo">Kaouane Walid</div>
+          <p>
+            Étudiant en Informatique à Sorbonne Université Paris 5.
+          </p>
+          <div class="footer-social">
+            <a href="https://github.com/walidkwn92" target="_blank" rel="noopener" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="mailto:walid.kaouane@etu.sorbonne-universite.fr" aria-label="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://tryhackme.com" target="_blank" rel="noopener" aria-label="TryHackMe">
+              <i class="fa-solid fa-terminal"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Navigation column -->
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="academic.html">Parcours académique</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact column -->
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li>
+              <a href="mailto:walid.kaouane@etu.sorbonne-universite.fr">
+                <i class="fa-solid fa-envelope" style="margin-right:6px;color:var(--accent-cyan);"></i>
+                walid.kaouane@etu.sorbonne-universite.fr
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/walidkwn92" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github" style="margin-right:6px;color:var(--accent-cyan);"></i>
+                github.com/walidkwn92
+              </a>
+            </li>
+            <li>
+              <span style="color:var(--text-secondary);font-size:0.88rem;">
+                <i class="fa-solid fa-location-dot" style="margin-right:6px;color:var(--accent-cyan);"></i>
+                Paris, France
+              </span>
+            </li>
+            <li>
+              <span style="color:var(--text-secondary);font-size:0.88rem;">
+                <i class="fa-solid fa-graduation-cap" style="margin-right:6px;color:var(--accent-cyan);"></i>
+                Sorbonne Université
+              </span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer bottom bar -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 Walid. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button id="backToTop" aria-label="Retour en haut">↑</button>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>

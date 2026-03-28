@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contactez Walid — Étudiant en Licence Informatique à Sorbonne Université, passionné de cybersécurité et développement." />
+  <title>Contact — Walid</title>
+
+  <!-- FontAwesome 6 -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Kaouane Walid</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Accueil</a></li>
+        <li><a href="about.html" class="nav-link">À propos</a></li>
+        <li><a href="academic.html" class="nav-link">Parcours académiques</a></li>
+        <li><a href="certifications.html" class="nav-link">Certifications</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       PAGE HERO
+  ══════════════════════════════════════ -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Me <span class="highlight">Contacter</span></h1>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       CONTACT SECTION
+  ══════════════════════════════════════ -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- ── LEFT: Contact form ────────────────────────── -->
+        <div class="contact-form-card card reveal">
+          <h2 class="form-title">Envoyer un message</h2>
+          <p class="form-subtitle">Remplissez le formulaire ci-dessous et je vous répondrai dans les plus brefs délais.</p>
+
+          <form id="contactForm" novalidate>
+
+            <!-- Honeypot (hidden from real users) -->
+            <input
+              type="text"
+              id="hp_field"
+              name="_gotcha"
+              tabindex="-1"
+              autocomplete="off"
+              style="display:none; position:absolute; left:-9999px;"
+              aria-hidden="true"
+            />
+
+            <!-- Row: Prénom + Nom -->
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="fname" class="form-label">Prénom <span aria-hidden="true">*</span></label>
+                <input
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  class="form-input"
+                  placeholder="Jean"
+                  autocomplete="given-name"
+                  required
+                />
+                <div class="field-error" id="fname_error" role="alert"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="lname" class="form-label">Nom <span aria-hidden="true">*</span></label>
+                <input
+                  type="text"
+                  id="lname"
+                  name="lname"
+                  class="form-input"
+                  placeholder="Dupont"
+                  autocomplete="family-name"
+                  required
+                />
+                <div class="field-error" id="lname_error" role="alert"></div>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+              <label for="email" class="form-label">Email <span aria-hidden="true">*</span></label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-input"
+                placeholder="jean.dupont@exemple.fr"
+                autocomplete="email"
+                required
+              />
+              <div class="field-error" id="email_error" role="alert"></div>
+            </div>
+
+            <!-- Sujet -->
+            <div class="form-group">
+              <label for="subject" class="form-label">Sujet <span aria-hidden="true">*</span></label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                class="form-input"
+                placeholder="Proposition de stage, collaboration..."
+                required
+              />
+              <div class="field-error" id="subject_error" role="alert"></div>
+            </div>
+
+            <!-- Message -->
+            <div class="form-group">
+              <label for="message" class="form-label">Message <span aria-hidden="true">*</span></label>
+              <textarea
+                id="message"
+                name="message"
+                class="form-textarea"
+                rows="6"
+                placeholder="Décrivez votre projet, votre question ou votre opportunité..."
+                required
+              ></textarea>
+              <div class="field-error" id="message_error" role="alert"></div>
+            </div>
+
+            <!-- Submit -->
+            <button type="submit" id="submitBtn" class="btn btn-primary btn-lg submit-btn">
+              <i class="fa-solid fa-paper-plane"></i>
+              Envoyer le message
+            </button>
+
+            <!-- Status -->
+            <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+
+            <!-- Note -->
+            <p class="form-note">
+              <i class="fa-solid fa-circle-check"></i>
+              Réponse garantie sous 48h
+            </p>
+
+          </form>
+        </div><!-- /.contact-form-card -->
+
+        <!-- ── RIGHT: Contact info ───────────────────────── -->
+        <div class="contact-info">
+
+          <!-- Availability status -->
+          <div class="status-available card reveal">
+            <span class="status-dot"></span>
+            <div class="status-text-wrap">
+              <span class="status-text">Disponible pour alternance</span>
+              <span class="status-sub">Actuellement ouvert aux opportunités professionnelles</span>
+            </div>
+          </div>
+
+          <!-- Info items -->
+          <div class="info-card card reveal">
+            <h3>Informations</h3>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="info-text">
+                <span class="info-label">Email</span>
+                <span class="info-value"><a href="mailto:walid.kaouane@etu.sorbonne-universite.fr">walid.kaouane@etu.sorbonne-universite.fr</a></span>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="info-text">
+                <span class="info-label">Localisation</span>
+                <span class="info-value">Paris, France</span>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div class="info-text">
+                <span class="info-label">Université</span>
+                <span class="info-value">Sorbonne Université</span>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-brands fa-github"></i></div>
+              <div class="info-text">
+                <span class="info-label">GitHub</span>
+                <span class="info-value">
+                  <a href="https://github.com/walidkwn92" target="_blank" rel="noopener">github.com/walidkwn92</a>
+                </span>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-shield-halved"></i></div>
+              <div class="info-text">
+                <span class="info-label">TryHackMe</span>
+                <span class="info-value">Actif régulièrement</span>
+              </div>
+            </div>
+
+          </div><!-- /.info-card -->
+
+          <!-- Availability tags -->
+          <div class="availability-card card reveal">
+            <h3>Disponibilités</h3>
+            <p>Ouvert aux opportunités suivantes :</p>
+            <div class="avail-tags">
+              <span class="avail-tag">Alternance</span>
+              <span class="avail-tag">Projets collaboratifs</span>
+            </div>
+          </div>
+
+        </div><!-- /.contact-info -->
+
+      </div><!-- /.contact-layout -->
+    </div><!-- /.container -->
+  </section>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">Kaouane Walid</div>
+          <p>Étudiant en Informatique à Sorbonne Université Paris 5.</p>
+          <div class="footer-social">
+            <a href="https://github.com/walidkwn92" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:walid.kaouane@etu.sorbonne-universite.fr" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://tryhackme.com" target="_blank" rel="noopener" aria-label="TryHackMe"><i class="fa-solid fa-shield-halved"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="academic.html">Parcours académique</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li>
+              <a href="mailto:walid.kaouane@etu.sorbonne-universite.fr">
+                <i class="fa-solid fa-envelope" style="margin-right:6px;color:var(--accent-cyan);"></i>
+                walid.kaouane@etu.sorbonne-universite.fr
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/walidkwn92" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github" style="margin-right:6px;color:var(--accent-cyan);"></i>
+                github.com/walidkwn92
+              </a>
+            </li>
+            <li>
+              <span style="color:var(--text-secondary);font-size:0.88rem;">
+                <i class="fa-solid fa-location-dot" style="margin-right:6px;color:var(--accent-cyan);"></i>
+                Paris, France
+              </span>
+            </li>
+            <li>
+              <span style="color:var(--text-secondary);font-size:0.88rem;">
+                <i class="fa-solid fa-graduation-cap" style="margin-right:6px;color:var(--accent-cyan);"></i>
+                Sorbonne Université
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Walid — Tous droits réservés</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" aria-label="Retour en haut">↑</button>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

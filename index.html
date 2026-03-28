@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio de Walid — Étudiant en 3ème année Informatique à Sorbonne Université, passionné par la cybersécurité, le développement et l'innovation." />
+  <title>Walid| Portfolio — Accueil</title>
+
+  <!-- FontAwesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+
+      <!-- Logo -->
+      <a href="index.html" class="nav-logo">Kaouane Walid</a>
+
+      <!-- Desktop Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html"          class="nav-link">Accueil</a></li>
+        <li><a href="about.html"          class="nav-link">À propos</a></li>
+        <li><a href="academic.html"       class="nav-link">Parcours académiques</a></li>
+        <li><a href="certifications.html" class="nav-link">Certifications</a></li>
+        <li><a href="contact.html"        class="nav-link btn btn-primary btn-sm">Contact</a></li>
+      </ul>
+
+      <!-- Mobile Toggle -->
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════════ -->
+  <main>
+
+    <!-- Matrix canvas background -->
+    <canvas id="matrixCanvas" aria-hidden="true"></canvas>
+
+    <section class="hero" id="hero">
+      <!-- Decorative gradient blobs -->
+      <div class="hero-blob hero-blob--cyan"  aria-hidden="true"></div>
+      <div class="hero-blob hero-blob--purple" aria-hidden="true"></div>
+      <div class="hero-blob hero-blob--green"  aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-content">
+
+          <!-- Terminal badge -->
+          <div class="hero-badge">
+            <span>&gt; Bienvenue sur mon portfolio</span>
+          </div>
+
+          <!-- Main heading -->
+          <h1 class="hero-title">
+            Étudiant en Informatique<br />
+            <span class="highlight">à Sorbonne Université</span>
+          </h1>
+
+          <!-- Description -->
+          <p class="hero-desc">
+            Étudiant en 3ème année à Sorbonne Université, je m'intéresse particulièrement à l'analyse de données et à la sécurité des systèmes, avec pour objectif de devenir SOC Analyst, Data Engineer ou Data Analyst, en concevant des solutions concrètes et performantes.
+          </p>
+
+          <!-- Availability status -->
+          <div class="hero-status">
+            <span class="status-dot"></span>
+            Disponible pour une alternance
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         STATS BAR
+    ═══════════════════════════════════════════════ -->
+    <div class="stats-bar">
+      <div class="container">
+        <div class="stats-grid stagger">
+
+          <div class="stat-item reveal">
+            <span class="stat-number" data-target="4">0</span>
+            <span class="stat-label">Projets</span>
+          </div>
+
+          <div class="stat-item reveal">
+            <span class="stat-number" data-target="2">0</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+
+          <div class="stat-item reveal">
+            <span class="stat-number" data-target="10" data-suffix="+">0</span>
+            <span class="stat-label">TryHackMe rooms</span>
+          </div>
+
+          <div class="stat-item reveal">
+            <span class="stat-number" data-target="3">0</span>
+            <span class="stat-label">Années d'études</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════
+         QUICK LINKS
+    ═══════════════════════════════════════════════ -->
+    <section class="quick-links section">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <h2 class="section-title">Explorer mon <span>univers</span></h2>
+          <div class="glow-line"></div>
+        </div>
+
+        <div class="quick-grid stagger">
+
+          <a href="certifications.html" class="quick-card card reveal">
+            <div class="quick-icon" style="background: rgba(57,211,83,0.12); color: var(--accent-green);">
+              <i class="fa-solid fa-certificate"></i>
+            </div>
+            <strong>Certifications</strong>
+            <span class="quick-card-desc">Mes diplômes et attestations officielles</span>
+          </a>
+
+          <a href="https://github.com/walidkwn92" target="_blank" rel="noopener" class="quick-card card reveal">
+            <div class="quick-icon" style="background: rgba(255,255,255,0.06); color: var(--text-primary);">
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <strong>Mon github</strong>
+            <span class="quick-card-desc">Mes projets open source</span>
+          </a>
+
+          <a href="#" class="quick-card card reveal">
+            <div class="quick-icon" style="background: rgba(255,71,87,0.12); color: var(--accent-red);">
+              <i class="fa-solid fa-file-pdf"></i>
+            </div>
+            <strong>CV</strong>
+            <span class="quick-card-desc">Télécharger le CV de Kaouane Walid</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Brand column -->
+        <div class="footer-brand">
+          <div class="footer-logo">Kaouane Walid</div>
+          <p>
+            Étudiant en Informatique à Sorbonne Université Paris 5.
+          </p>
+          <div class="footer-social">
+            <a href="https://github.com/walidkwn92" target="_blank" rel="noopener" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="mailto:walid.kaouane@etu.sorbonne-universite.fr" aria-label="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://tryhackme.com" target="_blank" rel="noopener" aria-label="TryHackMe">
+              <i class="fa-solid fa-terminal"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Navigation column -->
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="academic.html">Parcours académique</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact column -->
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li>
+              <a href="mailto:walid.kaouane@etu.sorbonne-universite.fr">
+                <i class="fa-solid fa-envelope" style="margin-right:6px;color:var(--accent-cyan);"></i>
+                walid.kaouane@etu.sorbonne-universite.fr
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/walidkwn92" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github" style="margin-right:6px;color:var(--accent-cyan);"></i>
+                github.com/walidkwn92
+              </a>
+            </li>
+            <li>
+              <span style="color:var(--text-secondary);font-size:0.88rem;">
+                <i class="fa-solid fa-location-dot" style="margin-right:6px;color:var(--accent-cyan);"></i>
+                Paris, France
+              </span>
+            </li>
+            <li>
+              <span style="color:var(--text-secondary);font-size:0.88rem;">
+                <i class="fa-solid fa-graduation-cap" style="margin-right:6px;color:var(--accent-cyan);"></i>
+                Sorbonne Université
+              </span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer bottom bar -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 Walid. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button id="backToTop" aria-label="Retour en haut">↑</button>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
+
+</body>
+</html>

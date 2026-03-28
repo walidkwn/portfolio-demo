@@ -1,0 +1,299 @@
+/* ============================================================
+   CERTIFICATIONS CSS — Page Certifications
+   ============================================================ */
+
+/* ── Page Hero (shared — mirrors about.css) ─────────────────── */
+.page-hero {
+  padding: calc(var(--nav-height) + 80px) 0 80px;
+  text-align: center;
+  background: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(157,78,221,0.07) 0%, transparent 70%);
+  border-bottom: 1px solid var(--border);
+}
+
+.page-hero .section-tag {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--accent-cyan);
+  letter-spacing: 0.05em;
+}
+
+.page-hero h1 {
+  font-family: var(--font-head);
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+
+.page-hero h1 span {
+  background: var(--grad-main);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.page-hero-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 560px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ── Badge variants ─────────────────────────────────────────── */
+.badge-green {
+  background: rgba(57, 211, 83, 0.12);
+  color: var(--accent-green);
+  border: 1px solid rgba(57, 211, 83, 0.25);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* ── Section 1: Certifications grid ─────────────────────────── */
+.certs-section {
+  padding: 100px 0;
+}
+
+.certs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  margin-top: 48px;
+}
+
+/* Cert card */
+.cert-card {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  transition: var(--transition);
+}
+
+.cert-card:hover {
+  border-color: var(--border-accent);
+  transform: translateY(-4px);
+  box-shadow: var(--glow-cyan);
+}
+
+/* Image wrapper */
+.cert-img-wrapper {
+  height: 180px;
+  background: var(--bg-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--border);
+  padding: 20px;
+}
+
+.cert-img-wrapper img {
+  max-height: 140px;
+  max-width: 80%;
+  object-fit: contain;
+}
+
+/* Fallback icon when image is missing */
+.cert-icon-fallback {
+  width: 80px;
+  height: 80px;
+  border-radius: 16px;
+  background: var(--grad-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #fff;
+}
+
+/* Cert header */
+.cert-header {
+  padding: 20px 24px 0;
+}
+
+.cert-title {
+  font-family: var(--font-head);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--text-primary);
+}
+
+.cert-meta {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+}
+
+/* Cert body */
+.cert-body {
+  padding: 14px 24px;
+  flex: 1;
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+/* Cert footer */
+.cert-footer {
+  padding: 16px 24px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* ── Section 2: In progress ─────────────────────────────────── */
+.in-progress-section {
+  margin-top: 0;
+  padding: 80px 0;
+  background: var(--bg-secondary);
+}
+
+.locked-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.locked-card {
+  background: var(--bg-card);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  opacity: 0.75;
+  text-align: center;
+  padding: 36px 28px;
+  transition: var(--transition);
+}
+
+.locked-card:hover {
+  opacity: 0.9;
+  border-color: rgba(255,165,0,0.35);
+  transform: translateY(-3px);
+}
+
+.locked-icon {
+  font-size: 2rem;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+}
+
+.locked-title {
+  font-family: var(--font-head);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.locked-desc {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+/* ── Section 3: Platforms ───────────────────────────────────── */
+.platforms-section {
+  margin-top: 0;
+  padding: 80px 0;
+}
+
+.platforms-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.platform-card {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 28px;
+  transition: var(--transition);
+}
+
+.platform-card:hover {
+  border-color: var(--border-accent);
+  transform: translateY(-3px);
+}
+
+.platform-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  flex-shrink: 0;
+}
+
+.platform-info {
+  flex: 1;
+}
+
+.platform-name {
+  font-family: var(--font-head);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.platform-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin-bottom: 14px;
+}
+
+/* ── Responsive ─────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .locked-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .certs-section      { padding: 60px 0; }
+  .in-progress-section { padding: 60px 0; }
+  .platforms-section  { padding: 60px 0; }
+
+  .certs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .locked-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .platforms-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .platform-card {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cert-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

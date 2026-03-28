@@ -1,0 +1,458 @@
+/* ============================================================
+   ABOUT CSS — Page À propos
+   ============================================================ */
+
+/* ── Page Hero ─────────────────────────────────────────────── */
+.page-hero {
+  padding: calc(var(--nav-height) + 80px) 0 80px;
+  text-align: center;
+  background: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(0,212,255,0.07) 0%, transparent 70%);
+  border-bottom: 1px solid var(--border);
+}
+
+.page-hero .section-tag {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--accent-cyan);
+  letter-spacing: 0.05em;
+}
+
+.page-hero h1 {
+  font-family: var(--font-head);
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+
+.page-hero h1 span {
+  background: var(--grad-main);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.page-hero-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ── Section 1: À propos ───────────────────────────────────── */
+.about-section {
+  padding: 100px 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 64px;
+  align-items: center;
+}
+
+/* Left: Text */
+.about-tag {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+.about-title {
+  font-family: var(--font-head);
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 20px;
+  color: var(--text-primary);
+}
+
+.about-desc {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+.about-desc strong {
+  color: var(--text-primary);
+}
+
+/* Info grid */
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 12px 16px;
+  transition: var(--transition);
+}
+
+.info-item:hover {
+  border-color: var(--border-accent);
+  background: var(--bg-card-hover);
+}
+
+.info-label {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-family: var(--font-mono);
+}
+
+.info-value {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* CTA buttons */
+.about-cta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Right: Profile card */
+.about-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-card {
+  position: relative;
+  text-align: center;
+  padding: 40px 32px 32px;
+  width: 100%;
+  max-width: 360px;
+  border: 1px solid var(--border-accent);
+  box-shadow: var(--glow-cyan);
+}
+
+.avatar-placeholder {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: var(--grad-main);
+  margin: 0 auto 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-head);
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  box-shadow: var(--glow-cyan);
+  flex-shrink: 0;
+}
+
+.profile-name {
+  font-family: var(--font-head);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.profile-role {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.profile-badge {
+  position: absolute;
+  bottom: 56px;
+  right: -12px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-accent);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: var(--text-primary);
+  white-space: nowrap;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+}
+
+.profile-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(57, 211, 83, 0.08);
+  border: 1px solid rgba(57, 211, 83, 0.25);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: var(--accent-green);
+}
+
+.profile-status .status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent-green);
+  box-shadow: 0 0 8px var(--accent-green);
+  animation: pulse 2s infinite;
+  flex-shrink: 0;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.6; transform: scale(0.85); }
+}
+
+/* ── Section 2: Skills ─────────────────────────────────────── */
+.skills-section {
+  background: var(--bg-secondary);
+  padding: 100px 0;
+}
+
+.skills-categories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  margin-top: 48px;
+}
+
+.skill-category {
+  padding: 28px;
+}
+
+.skill-category h3 {
+  font-family: var(--font-head);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Soft skills span full row — wide list layout */
+.soft-skills-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px 28px;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.skill-name {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.skill-note {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.skill-stars {
+  font-size: 0.78rem;
+  color: var(--accent-cyan);
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.skill-bar {
+  height: 6px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.skill-bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  background: var(--grad-main);
+  width: 0%;
+  transition: width 1s ease 0.2s;
+}
+
+/* ── Section 3: Interests ──────────────────────────────────── */
+.interests-section {
+  padding: 80px 0;
+}
+
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+  margin-top: 48px;
+}
+
+.interest-card {
+  text-align: center;
+  padding: 28px 16px 24px;
+  cursor: default;
+  transition: var(--transition);
+}
+
+.interest-card:hover {
+  border-color: var(--border-accent);
+  transform: translateY(-4px);
+  box-shadow: var(--glow-cyan);
+}
+
+.interest-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  display: block;
+  line-height: 1;
+}
+
+.interest-label {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+/* ── Section 4: Objectives ─────────────────────────────────── */
+.objectives-section {
+  padding: 80px 0;
+  background: var(--bg-secondary);
+}
+
+.objectives-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.objective-card {
+  position: relative;
+  padding: 32px 28px;
+  transition: var(--transition);
+}
+
+.objective-card:hover {
+  border-color: var(--border-accent);
+  transform: translateY(-4px);
+}
+
+.objective-icon {
+  font-size: 2rem;
+  margin-bottom: 14px;
+  display: block;
+  line-height: 1;
+}
+
+.objective-title {
+  font-family: var(--font-head);
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--text-primary);
+}
+
+.objective-desc {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+/* ── Responsive ────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .about-visual {
+    order: -1;
+  }
+
+  .interests-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section  { padding: 60px 0; }
+  .skills-section { padding: 60px 0; }
+  .interests-section  { padding: 60px 0; }
+  .objectives-section { padding: 60px 0; }
+
+  .about-title { font-size: 1.9rem; }
+
+  .skills-categories {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-category[style*="grid-column"] {
+    grid-column: 1 !important;
+  }
+
+  .soft-skills-list {
+    grid-template-columns: 1fr;
+  }
+
+  .interests-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .objectives-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-badge {
+    position: static;
+    display: inline-block;
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-cta {
+    flex-direction: column;
+  }
+
+  .about-cta .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .interests-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
